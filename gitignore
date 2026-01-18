@@ -1,0 +1,15 @@
+# Ignore environment and database credentials
+.env
+inc/config.php
+db.php
+
+# Ignore OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore build artifacts
+node_modules/
+dist/
