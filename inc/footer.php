@@ -12,6 +12,9 @@
       <div class="modal__body" id="modalBody"></div>
     </div>
   </div>
+<a href="https://github.com/johnliter/creations" class="fork-me" target="_blank" rel="noopener">
+  Fork me on GitHub
+</a>
 
   <script src="/assets/app.js"></script>
 </body>

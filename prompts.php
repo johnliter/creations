@@ -15,16 +15,23 @@ require_once __DIR__ . '/inc/header.php';
 
 <div class="mobile-nav">
   <a href="/images.php" class="<?= active_nav('/images.php') ?>">
-    <span class="icon">🖼️</span>
-    Images
+    <i class="fa-solid fa-image"></i>
+    <span>Images</span>
   </a>
+
   <a href="/prompts.php" class="<?= active_nav('/prompts.php') ?>">
-    <span class="icon">🧠</span>
-    Prompts
+    <i class="fa-solid fa-brain"></i>
+    <span>Prompts</span>
   </a>
+
   <a href="/music.php" class="<?= active_nav('/music.php') ?>">
-    <span class="icon">🎵</span>
-    Music
+    <i class="fa-solid fa-music"></i>
+    <span>Music</span>
+  </a>
+
+  <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i>
+    <span>Repo</span>
   </a>
 </div>
 
