@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <!-- Your styles -->
-  <link rel="stylesheet" href="/assets/styles.css?v=7" />
+  <link rel="stylesheet" href="/assets/styles.css?v=8" />
 </head>
 
 <body>
@@ -42,7 +42,7 @@
     <span class="pill">Soon</span>
   </a>
 
-  <a class="nav__item" href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">
+  <a class="nav__item" href="https://github.com/johnliter/creations" target="_blank" rel="noopener">
     <i class="fa-brands fa-github"></i>
     GitHub Repo
   </a>
