@@ -1,7 +1,7 @@
 # Ignore environment and database credentials
 .env
 inc/config.php
-db.php
+inc/db.php
 
 # Ignore OS junk
 .DS_Store
