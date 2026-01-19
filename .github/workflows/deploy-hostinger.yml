@@ -22,7 +22,7 @@ jobs:
           port: 21
 
           # If your repo root IS the creations site, keep this:
-          local-dir: ./creations/
+          local-dir: ./
 
           # Deploy ONLY into the creations folder on Hostinger:
           server-dir: /domains/johnliter.blog/public_html/creations/
