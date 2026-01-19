@@ -64,7 +64,7 @@ require_once __DIR__ . '/inc/header.php';
     <span>Music</span>
   </a>
 
-  <a href="https://github.com/YOUR-USERNAME/YOUR-REPO" target="_blank" rel="noopener">
+  <a href="https://github.com/johnliter/creations" target="_blank" rel="noopener">
     <i class="fa-brands fa-github"></i>
     <span>Repo</span>
   </a>
