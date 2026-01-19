@@ -1,0 +1,42 @@
+name: Deploy Creations to Hostinger (FTPS)
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Deploy via FTPS (creations only)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+
+          # If your repo root IS the creations site, keep this:
+          local-dir: ./creations/
+
+          # Deploy ONLY into the creations folder on Hostinger:
+          server-dir: /domains/johnliter.blog/public_html/creations/
+
+          # Do NOT wipe remote files
+          dangerous-clean-slate: false
+
+          # Prevent secrets + repo meta from uploading
+          exclude: |
+            **/.git*
+            **/.github/**
+            **/.env
+            **/inc/config.php
+            **/inc/db.php
+            **/*.log
+            **/node_modules/**
+            **/dist/**
