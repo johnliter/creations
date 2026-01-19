@@ -25,7 +25,7 @@ jobs:
           local-dir: ./
 
           # Deploy ONLY into the creations folder on Hostinger:
-          server-dir: /domains/johnliter.blog/public_html/creations/
+          server-dir: /public_html/creations/
 
           # Do NOT wipe remote files
           dangerous-clean-slate: false
@@ -40,3 +40,5 @@ jobs:
             **/*.log
             **/node_modules/**
             **/dist/**
+            README.md
+            repo-banner.png
